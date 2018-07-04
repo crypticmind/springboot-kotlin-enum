@@ -29,7 +29,7 @@ class Application(val properties: Properties) {
 @ConfigurationProperties(prefix = "custom")
 @Validated
 class Properties {
-    var test = TestEnum.VALUE1
+    lateinit var test: TestEnum
 }
 
 enum class TestEnum {VALUE1, VALUE2}
